@@ -4,7 +4,7 @@ services:
     image: mysql:5.7
     volumes:
       - ./mysql/:/etc/mysql/conf.d/
-      - ./db_data:/var/lib/mysql
+      - /data/mysql:/var/lib/mysql
     restart: always
     ports:
       - "3306:3306"
@@ -17,3 +17,5 @@ services:
     image: atlassian/confluence-server
     ports:
       - "8090:8090"
+    volumes:
+      - /data/confluence:/var/atlassian/application-data/confluence
