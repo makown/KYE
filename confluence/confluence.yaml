@@ -3,8 +3,8 @@ services:
   mysql:
     image: mysql:5.7
     volumes:
-      - ./mysql/:/etc/mysql/conf.d/
-      - /data/mysql:/var/lib/mysql
+      - ./config/mysql/:/etc/mysql/conf.d/
+      - ./data/mysql:/var/lib/mysql
     restart: always
     ports:
       - "3306:3306"
@@ -14,8 +14,8 @@ services:
       MYSQL_USER: confluence
       MYSQL_PASSWORD: confluencekye
   confluence:
-    image: atlassian/confluence-server
+    image: registry.cn-shenzhen.aliyuncs.com/kye/confluence-server:6.8.2
     ports:
-      - "8090:8090"
+      - "80:8090"
     volumes:
-      - /data/confluence:/var/atlassian/application-data/confluence
+      - ./data/confluence:/var/atlassian/application-data/confluence
