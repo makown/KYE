@@ -17,5 +17,10 @@ services:
     image: registry.cn-shenzhen.aliyuncs.com/kye/confluence-server:6.8.2
     ports:
       - "80:8090"
+    environment:
+      JVM_MINIMUM_MEMORY: 2G
+      JVM_MAXIMUM_MEMORY: 3G    
+    depends_on:
+      - mysql
     volumes:
       - ./data/confluence:/var/atlassian/application-data/confluence
