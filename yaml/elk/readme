@@ -1,0 +1,5 @@
+在elastic中设置登录密码：elastic  kibana logstash_system
+在kibaba中设置连接到elastic的密码
+./bin/xpatch
+./setup-passwords interactive
+密码 abcd1234*
