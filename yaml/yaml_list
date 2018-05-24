@@ -1,0 +1,23 @@
+dockerfile_list
+001 base_0              registry.cn-shenzhen.aliyuncs.com/whb/base:0    
+002 jdk:1.7.0.45       registry.cn-shenzhen.aliyuncs.com/whb/jdk:1.7.0.45
+003 jdk_8                 registry.cn-shenzhen.aliyuncs.com/whb/jdk:1.8.0_151
+004 tomcat7            registry.cn-shenzhen.aliyuncs.com/whb/tomcat7:jdk_1.7.0.45
+005 tomcat7            registry.cn-shenzhen.aliyuncs.com/whb/tomcat7:jdk_1.8.0_151
+006 tomcat7_session   registry.cn-shenzhen.aliyuncs.com/whb/tomcat7:jdk_1.7.0.45_session
+007 tomcat8            registry.cn-shenzhen.aliyuncs.com/whb/tomcat8:jdk_1.8.0_151
+008 tomcat8            registry.cn-shenzhen.aliyuncs.com/whb/tomcat8:jdk_1.7.0.45
+009 redis4               registry.cn-shenzhen.aliyuncs.com/whb/redis
+010 sentinel             registry.cn-shenzhen.aliyuncs.com/whb/sentinel
+011 zookeeper         registry.cn-shenzhen.aliyuncs.com/whb/zookeeper
+012  mysql               registry.cn-shenzhen.aliyuncs.com/whb/mysql:5.6
+013  mysql               registry.cn-shenzhen.aliyuncs.com/whb/mysql:5.7
+014  mysql               registry.cn-shenzhen.aliyuncs.com/whb/mysql:5.8
+015  confluence       registry.cn-shenzhen.aliyuncs.com/kye/confluence-server:6.8.2
+elk 
+registry.cn-shenzhen.aliyuncs.com/kye/elasticsearch:6.2.4
+registry.cn-shenzhen.aliyuncs.com/kye/elasticsearch-platinum:6.2.4
+registry.cn-shenzhen.aliyuncs.com/kye/kibana:6.2.4
+registry.cn-shenzhen.aliyuncs.com/kye/logstash:6.2.4
+registry.cn-shenzhen.aliyuncs.com/kye/logstash_f
+registry.cn-shenzhen.aliyuncs.com/kye/kibana_f
