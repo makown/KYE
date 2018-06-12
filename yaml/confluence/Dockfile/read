@@ -1,0 +1,17 @@
+wiki系统
+IP :   http://10.20.241.6
+管理账号密码：找陆川
+架构nginx + java + mysql
+ 
+mysql信息：
+IP 10.20.241.6
+port 3306
+root  rootkye
+confluence  confluencekye
+
+confluence启动停止
+/opt/atlassian/confluence/bin/startup.sh
+/opt/atlassian/confluence/bin/shutdown.sh
+
+配置文件
+/var/atlassian/application-data/confluence/confluence.cfg.xml
